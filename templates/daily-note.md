@@ -1,38 +1,57 @@
 # YYYY-MM-DD — Wn Day n
 
-> Build log，不是听课笔记。今天写了什么代码、卡在哪、demo 进度到哪。
+> 填空式 daily note。**预填段（顶部）**由我（Agent）每天起一遍；**填空段（中段）**卡兹克边动手边写或晚上集中说；**打卡正文段（底部）**由我根据填空段整理，卡兹克直接复制到 WCB。
 
-## 今日 build 目标（≤3，必须可验证）
+---
 
-- [ ] （动词 + 具体输出，例："让 wallet_lens.py 支持 Base 链"）
+## ▼ 预填段（Agent 写）
 
-## 进度 / 产出
+### 今日 build 目标（≤3）
 
-- 代码改动：`experiments/<编号>-<主题>/`
-- 能跑的 demo：（命令 + 截图路径）
-- 没做完就写"今日空转"，不凑字数
+- [ ]
+- [ ]
 
-## 卡点
+### 今日课程（来自 pull-schedule.py）
+
+- 🔥 必到：
+- ✅ 推荐：
+- ⚪ 跳过 / 回放：
+
+---
+
+## ▼ 填空段（卡兹克写，或对话里告诉 Agent 让 Agent 整理）
+
+### 实际产出
+
+> 写了几行代码 / 跑通了什么 / demo 进度。没产出就如实写"今日空转"。
 
 -
 
-## 课程（如果听了）
+### 图片
 
-- 标题 / 时间 / 听了多久
-- 跟 build 的关联（没关联就跳过）
-- 一行收获 / 一行 BS
+> 截图丢给 Agent，Agent 落到 `daily/assets/YYYY-MM-DD-<slug>.png` 后嵌进来。
 
-## 明日计划
+### 卡点
 
-- （明天的具体 deliverable）
+-
 
-## 打卡
+### 课程实际听了多少 / 一句话评价
 
-- WCB：https://web3career.build/zh/programs/AI-Web3-School#tab=learning
-- 草稿：
+-
+
+### 明日计划
+
+-
+
+---
+
+## ▼ 打卡正文段（Agent 整理，卡兹克复制到 WCB）
+
+> 直接复制下面这段到 WCB Learning 富文本框，手动贴图，提交。
 
 ```
-（按真实进度，没产出就写"今日空转，明天补"）
+（Agent 根据填空段整理，3-6 行，能反映今日真实产出）
 ```
 
-- 提交状态：未提交 / 已提交（链接：）
+WCB 链接：https://web3career.build/zh/programs/AI-Web3-School#tab=learning  
+提交状态：未提交 / 已提交（链接：）

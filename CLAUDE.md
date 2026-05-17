@@ -24,6 +24,27 @@
 - WCB Agent Secret API Key（变量名 `WCB_AGENT_SECRET_API_KEY`）
 - 助记词 / 私钥 / RPC URL 里的 API key 部分
 - Telegram / 微信 / 邮件等未公开联系方式
+- **图片类**：`daily/assets/` 是 public，**禁止**放聊天记录截图、私聊、密钥窗口、含真实身份证 / 银行卡 / 邮箱地址的页面截图
+
+## 每日打卡流程（W1 试运行版）
+
+WCB 平台和 GitHub repo 是**两份独立内容**，不靠 URL 联动。WCB 当天打卡用，GitHub 长期 build log + 黑客松证据。
+
+**Agent 负责**：
+- 拉课表（`python experiments/00-wcb-agent-probe/pull-schedule.py`）
+- 预填当天 daily note 顶部（build 目标、课程清单）
+- 接收卡兹克给的图片 → 落 `daily/assets/YYYY-MM-DD-<slug>.png`
+- 把对话里的"做了 X / 卡在 Y"整理进 daily note 中段
+- 整理"打卡正文段"（3-6 行，能直接复制到 WCB）
+- `git add . && git commit && git push`
+
+**卡兹克负责**：
+- 在对话里告诉 Agent：今天写了什么代码、卡在哪、哪些图要附
+- 复制 Agent 整理的"打卡正文段"到 WCB UI，手动贴图，提交
+- 提交后回一句"打过了"
+
+**W1 末（2026-05-24 周日）复盘**：
+- 流程跑通几次？哪些环节冗余？是否升级到双轨 / 脚本化 / `tasks.submitEvidence` API。
 
 实际操作：
 - secret 一律走 Windows 用户级环境变量（`setx KEY VALUE`）
