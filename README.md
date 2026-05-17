@@ -1,10 +1,13 @@
 # ai-web3-school-cohort-0
 
-Personal learning journal and proof-of-work for **AI × Web3 School**.
+Personal **build log + experiments** for **AI × Web3 School** Cohort 0（2026-05-18 → 06-14）。
+
+> 注意：这个 repo 不是打卡 repo。打卡走 ICL fork（`lh1564803535-code/AI-Web3-School` 的 `notes/lh1564803535-code.md`）。本 repo 写详细 build log + 代码 + 黑客松证据，是长期资产。
 
 - Handbook：https://aiweb3.school/zh/handbook/
 - WCB 课程：https://web3career.build/zh/programs/AI-Web3-School
 - WCB Learning：https://web3career.build/zh/programs/AI-Web3-School#tab=learning
+- ICL 打卡 repo：https://github.com/lh1564803535-code/AI-Web3-School
 - Learning Agent Prompt：https://aiweb3.school/learning-agent.zh.txt
 
 ## 目录结构
@@ -30,3 +33,5 @@ WCB Agent secret 只放本地环境变量 `WCB_AGENT_SECRET_API_KEY`，不进 co
 
 **目标是 4 周内拼一个能 demo 的 AI × Web3 原型，不是写 4 周听课笔记。**  
 每天 `daily/YYYY-MM-DD.md` 是 **build log**：写了几行代码、卡在哪、demo 进度。听课心得是次要副产品，没产出就如实写空转。详见 `learning-plan.md` 与 `CLAUDE.md`。
+
+**打卡走 ICL fork**：本仓库写详细 build log，ICL fork 的 `notes/lh1564803535-code.md` 写当天精炼摘要，push 即打卡（平台 30 秒轮询）。两边内容不冗余。

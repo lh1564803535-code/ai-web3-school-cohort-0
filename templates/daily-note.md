@@ -1,6 +1,6 @@
 # YYYY-MM-DD — Wn Day n
 
-> 填空式 daily note。**预填段（顶部）**由我（Agent）每天起一遍；**填空段（中段）**卡兹克边动手边写或晚上集中说；**打卡正文段（底部）**由我根据填空段整理，卡兹克直接复制到 WCB。
+> 填空式 daily note。**预填段（顶部）**由 Agent 每天起一遍；**填空段（中段）**卡兹克边动手边写或晚上集中说；**ICL 打卡段（底部）**由 Agent 根据填空段整理，**Agent 直接 push 到 ICL fork**（`lh1564803535-code/AI-Web3-School` 的 `notes/lh1564803535-code.md`），平台 30 秒内识别。卡兹克不去 WCB UI 操作。
 
 ---
 
@@ -45,13 +45,17 @@
 
 ---
 
-## ▼ 打卡正文段（Agent 整理，卡兹克复制到 WCB）
+## ▼ ICL 打卡段（Agent 整理后 push 到 ICL fork）
 
-> 直接复制下面这段到 WCB Learning 富文本框，手动贴图，提交。
+> **打卡载体**：`lh1564803535-code/AI-Web3-School` 仓库的 `notes/lh1564803535-code.md`。  
+> Agent 把下面这段追加到该文件 → push → 平台 30 秒轮询识别。  
+> **不去 WCB UI 操作**。卡兹克 1 分钟后刷新日历看是否变绿。
 
+```markdown
+## Day N - YYYY-MM-DD
+
+（3-8 行精炼摘要：今日产出 / 关键卡点 / 一句反思。可嵌入图片，URL 用 GitHub raw 链接。）
 ```
-（Agent 根据填空段整理，3-6 行，能反映今日真实产出）
-```
 
-WCB 链接：https://web3career.build/zh/programs/AI-Web3-School#tab=learning  
-提交状态：未提交 / 已提交（链接：）
+ICL repo：https://github.com/lh1564803535-code/AI-Web3-School  
+打卡状态：未推 / 已推（push commit URL：）/ 平台已识别变绿

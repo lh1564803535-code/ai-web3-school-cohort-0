@@ -39,8 +39,8 @@
 ✅ 推荐：AI 时代基础架构 / AI 下乡计划  
 ⚪ 可选：Co-Learning（看当周状态）/ Z.AI / Web3 运行原理（基础已会）
 
-## 任务系统
+## 任务系统 / 打卡机制
 
-- `tasks.listForLearner` 当前返回 0 条
-- 推断：开营前/未选 Track 时不下发任务，05-18 后会出现
-- 选 Track 的入口（`tracks.setMySelection`）API 不开放给 learner key，只能去网页选
+- `tasks.listForLearner` 当前返回 0 条任务
+- **打卡不走 task 系统**：打卡 = 给 ICL fork repo（`lh1564803535-code/AI-Web3-School`）的 `notes/lh1564803535-code.md` push 一段 markdown，平台每 30 秒拉一次。详见项目根 `CLAUDE.md` 「每日打卡流程」
+- 选 Track 入口（`tracks.setMySelection`）API 不开放给 learner key，只能去网页选

@@ -55,6 +55,7 @@ W1 出最小版本后正式锁定。判优逻辑：
 
 ## WCB 平台联动
 
+- **打卡机制**：编辑 ICL fork `lh1564803535-code/AI-Web3-School` 的 `notes/lh1564803535-code.md`，push 后平台 30 秒内识别。不走 WCB UI 提交。详见 `CLAUDE.md` 「每日打卡流程」
 - 课表自动拉：`python experiments/00-wcb-agent-probe/pull-schedule.py`
-- 任务提交：`tasks.submitEvidence`（W1 实测后写文档）
+- `tasks.submitEvidence` API：留作未来选项，本期可能用不上（打卡走 git，不走 task 系统）
 - 选 Track / 报名活动：去网页操作（API 不开放给 learner key）

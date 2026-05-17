@@ -28,23 +28,34 @@
 
 ## 每日打卡流程（W1 试运行版）
 
-WCB 平台和 GitHub repo 是**两份独立内容**，不靠 URL 联动。WCB 当天打卡用，GitHub 长期 build log + 黑客松证据。
+**打卡的真实形态**（2026-05-17 晚发现）：WCB 平台不收 UI 贴图。打卡 = 给 ICL fork repo 的 `notes/lh1564803535-code.md` 追加一段 markdown 然后 push，平台每 30 秒拉一次检测更新。
+
+涉及两个 repo，分工明确：
+
+| Repo | 路径 | 角色 |
+| --- | --- | --- |
+| `lh1564803535-code/AI-Web3-School`（ICL fork） | 待 clone 到 `~/AI-Web3-School` | **打卡载体**。只编辑 `notes/lh1564803535-code.md`，每天追加一段。push 即提交 |
+| `lh1564803535-code/ai-web3-school-cohort-0`（本仓库） | `~/ai-web3-school-cohort-0` | **build log + 黑客松证据**。代码、experiments、handbook-feedback、详细日记 |
+
+两边内容不冗余：本仓库写"今天写了什么代码 / 卡在哪 / 截图 / 反思"，ICL notes 写"今日精炼版（3-8 行 + 关键截图）"。
 
 **Agent 负责**：
 - 拉课表（`python experiments/00-wcb-agent-probe/pull-schedule.py`）
-- 预填当天 daily note 顶部（build 目标、课程清单）
+- 预填本仓库当天 daily note 顶部
 - 接收卡兹克给的图片 → 落 `daily/assets/YYYY-MM-DD-<slug>.png`
-- 把对话里的"做了 X / 卡在 Y"整理进 daily note 中段
-- 整理"打卡正文段"（3-6 行，能直接复制到 WCB）
-- `git add . && git commit && git push`
+- 把对话整理进 daily note 中段
+- 整理"ICL 打卡段"（3-8 行 markdown + 图片引用）
+- 同时 push 两个 repo：本仓库（详细）+ ICL fork（精炼打卡段追加到 `notes/lh1564803535-code.md`）
 
 **卡兹克负责**：
-- 在对话里告诉 Agent：今天写了什么代码、卡在哪、哪些图要附
-- 复制 Agent 整理的"打卡正文段"到 WCB UI，手动贴图，提交
-- 提交后回一句"打过了"
+- 在对话里告诉 Agent：今天写了什么、卡在哪、哪些图要附
+- 不需要再去 WCB UI 操作，push 到 ICL fork 就是打卡
+- 30-60 秒后自己刷新 WCB 日历看是否变绿，回一句"绿了"或"没绿"
 
 **W1 末（2026-05-24 周日）复盘**：
-- 流程跑通几次？哪些环节冗余？是否升级到双轨 / 脚本化 / `tasks.submitEvidence` API。
+- ICL push 是否每次都被平台识别
+- 截图嵌入是否有效（GitHub 渲染图片是公开 raw URL）
+- 是否需要 Chrome 扩展辅助校验状态色
 
 实际操作：
 - secret 一律走 Windows 用户级环境变量（`setx KEY VALUE`）
