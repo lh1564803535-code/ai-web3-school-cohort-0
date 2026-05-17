@@ -13,6 +13,12 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
 
+# Force UTF-8 stdout on Windows so Chinese titles print correctly.
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+
 BASE = "https://web3career.build/api/agent/call"
 PROGRAM_ID = "cmnx791nl008sru0167pzp4ki"
 SLUG = "AI-Web3-School"
@@ -29,6 +35,7 @@ def call(procedure: str, payload: dict) -> dict:
         headers={
             "Authorization": f"Bearer {key}",
             "Content-Type": "application/json",
+            "User-Agent": "ai-web3-school-cohort-0/0.1 (+learning-agent)",
         },
         method="POST",
     )
