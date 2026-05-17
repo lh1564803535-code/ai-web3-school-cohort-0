@@ -26,6 +26,7 @@ Personal learning journal and proof-of-work for **AI × Web3 School**.
 不写：助记词、私钥、API key、未公开联系方式、内部会议链接、他人个人数据、任何 secret。  
 WCB Agent secret 只放本地环境变量 `WCB_AGENT_SECRET_API_KEY`，不进 commit、不进 prompt 截图、不进 README。
 
-## 工作节奏
+## 工作节奏（build-first）
 
-每天结束前在 `daily/YYYY-MM-DD.md` 记录：今天读了什么、产出了什么、卡在哪、明天打算做什么、打卡链接。
+**目标是 4 周内拼一个能 demo 的 AI × Web3 原型，不是写 4 周听课笔记。**  
+每天 `daily/YYYY-MM-DD.md` 是 **build log**：写了几行代码、卡在哪、demo 进度。听课心得是次要副产品，没产出就如实写空转。详见 `learning-plan.md` 与 `CLAUDE.md`。

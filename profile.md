@@ -20,6 +20,8 @@
 
 **AI × Web3 产品原型 / 黑客松**。重点不是当合约 dev，而是把 Agent + 钱包 + 工具调用 + 可验证记录拼成可演示的小产品。
 
+**Build-first**：不靠听课交作业，每周必须出一个能跑通的 experiment。课程是次要参考，详见 `CLAUDE.md`。
+
 ## 关注的 Bridge 议题（按优先级）
 
 1. Agent Wallet — Agent 能拿什么权限、如何撤销
